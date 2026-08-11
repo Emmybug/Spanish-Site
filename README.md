@@ -1,2 +1,2 @@
 # resume-site
-Personal portfolio website :3
+Spanish website :3
