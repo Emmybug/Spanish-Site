@@ -1,216 +1,11 @@
- <!-- this is a free template made by tiramisu from electric-tenshi! do not remove the credit in the footer. all images used in this layout are not mine.-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emily's Awesome Spanish Site</title>
-  <link rel="icon" type="image/x-icon" href="ghost_cat.png">
-    <style>
-        body {
-            font-family: "MS PGothic", sans-serif;
-            background: url("https://i.pinimg.com/1200x/36/69/09/366909636950ce8fadab7cf1b556d76a.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        .container {
-            width: 1024px;
-            max-width: 1024px;
-            margin: 20px auto;
-            border: 9px double #87e1ff;
-            background: url("http://dl5.glitter-graphics.net/pub/124/124735q1i9ttxdqj.gif");
-           background-size: 12%;
-           position: relative;
-           box-shadow: 5px 7px 16px 3px rgba(0,48,217,0.2);
--webkit-box-shadow: 5px 7px 16px 3px rgba(0,48,217,0.2);
--moz-box-shadow: 5px 7px 16px 3px rgba(0,48,217,0.2);
-        }
-
-       .banner {
-    background: url("https://i.pinimg.com/originals/9b/d8/90/9bd89050c9b149dfda7bc46e9782fd04.gif") center center;
-    height: 233px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-     --y-position: 35%; /* default is centered. modify this if you want to move your banner image up or down. */
-    background-position: center var(--y-position);
-    border-bottom: 3px solid #073c87;
-}
-
-.banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    z-index: -1;
-}
-        .content {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            gap: 20px;
-        }
-
-        .main-content, .side-content {
-            border: 3px inset #b8cbe6;
-            padding: 20px;
-            background-color: #fae8fb;
-            box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
--webkit-box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
--moz-box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
-        }
-
-        .main-content {
-            width: 640px;
-            padding: 11px;
-        }
-      
-      .main-content h3, h2 {
-        color: #4a003c;
-        font-size: 1.3em;
-        margin-top: 11px;
-      }
-      
-      .main-content p {
-        font-size: 1.1em;
-        color: #c9007d;
-        line-height: 1.3em;
-      }
-      
-      .main-content a {
-        text-decoration: underline;
-        color: #3329d5;
-      }
-      
-      .main-content li {
-        list-style-image: url("https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/shining%20blue/05b707f40897673e8f8e208a9ea90046247a87a8.gifv");
-        margin-right: 20px;
-        font-size: 1.1em;
-        color: #9800a6;
-      }
-
-        .side-content {
-            width: 290px;
-            padding: 9px;
-        }
-
-
-        .navigation {
-            margin-top: 10px;
-            padding: 3px;
-        }
-
-        .navigation a {
-            display: block;
-            color: #0016bf;
-            text-decoration: none;
-            font-size: 1.6em;
-            margin: 12px 0;
-        }
-
-        .navigation a:hover {
-            text-decoration: underline;
-            font-style: italic;
-        }
-
-        .update-log {
-            margin-top: 20px;
-            padding: 10px;
-            margin-left: 321px;
-            background-color: #d6e4f6;
-            height: 100px;
-            border: 3px inset #b8cbe6;
-            overflow-y: auto;
-            box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
--webkit-box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
--moz-box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
-        }
-      
-      .update-log h3 {
-        color: #001f4a;
-        font-size: 1.3em;
-        margin-top: 11px;
-      }
-      
-      .update-log li {
-        color: #0058d4;
-        margin-right: 39px;
-        line-height: 21px;
-        list-style-image: url("https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/shining%20blue/f84f7f1b7f2c9b99c44860cad40952cd5ddaa339.gifv");
-      }
-
-        .update-log::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .update-log::-webkit-scrollbar-thumb {
-            background-color: #5b8cc1;
-            border-radius: 3px;
-        }
-      
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background-color: #5b8cc1;
-            border-radius: 3px;
-        }
-
-        .footer {
-            background-color: #bfdaff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            color: #25518f;
-        }
-
-        /* decorative images: positioned relative to the container. you can change the images here or add more. just make sure your pictures have transparent backgrounds! */
-        .decorative-image {
-            position: absolute;
-            background-size: contain;
-            background-repeat: no-repeat;
-            z-index: 1000;
-        }
-
-        .top-left {
-            top: 90px;
-            left: -70px;
-            width: 244px;
-            background-image: url('heart_button.png');
-            height: 166px;
-            transform: rotate(346deg);
-        }
-
-        .bottom-right {
-            bottom: -30px;
-            right: -189px;
-            background-image: url('https://64.media.tumblr.com/b69cad3dfd0a76c0e57bc6bf97812e24/565e6b98159a2376-04/s250x400/817915090c662cfe5b3a22c82ed17067f747533f.pnj');
-            width: 320px;
-            height: 340px;
-            transform: rotate(11deg);
-        }
-
-        .top-right {
-            top: 166px;
-            right: -87px;
-            background-image: url('https://www.freepnglogos.com/uploads/bug-png/ladybug-png-transparent-image-pngpix-7.png');
-            width: 220px;
-            height: 140px;
-            transform: rotate(11deg);
-        }
-
-    </style>
+  <link rel="icon" type="image/x-icon" href="photos/ghost_cat.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -219,6 +14,10 @@
         <div class="decorative-image bottom-right"></div>
         <div class="decorative-image top-right"></div>
         <div class="banner">
+            <div class="curved-rectangle">
+                <h1>Emily's Awesome Spanish Site</h1>
+            </div>
+            
         </div>
 
         <div class="content">
@@ -249,7 +48,7 @@
             <div class="main-content">
                 <h2>Syllabus!</h2>
                 <p>Here is the most current syllabus for the class. You can also find this in the Canvas course :D</p>
-                <iframe src="laorden_syllabus_fall_2026.pdf" title="LaOrden Beginning Spanish 1 Syllabus - Fall 2026" width="100%" height="300px" style="border: none;"></iframe>
+                <iframe src="documents/laorden_syllabus_fall_2026.pdf" title="LaOrden Beginning Spanish 1 Syllabus - Fall 2026" width="100%" height="300px" style="border: none;"></iframe>
             </div>
             <div class="main-content">
                 <h2>Google Calendar!</h2>
@@ -271,7 +70,7 @@
         </div>
 
         <div class="footer">
-            &copy; 2024 electric-tenshi.
+            &copy; 2026 https://github.com/Emmybug
         </div>
     </div>
 </body>
