@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+body {
+    font-family: "MS PGothic", sans-serif;
+    background: url("https://i.pinimg.com/1200x/36/69/09/366909636950ce8fadab7cf1b556d76a.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1024px;
+    max-width: 1024px;
+    margin: 20px auto;
+    border: 9px double #87e1ff;
+    background: url("http://dl5.glitter-graphics.net/pub/124/124735q1i9ttxdqj.gif");
+    background-size: 12%;
+    position: relative;
+    box-shadow: 5px 7px 16px 3px rgba(0,48,217,0.2);
+    -webkit-box-shadow: 5px 7px 16px 3px rgba(0,48,217,0.2);
+    -moz-box-shadow: 5px 7px 16px 3px rgba(0,48,217,0.2);
+}
+
+.banner {
+    background: url("https://i.pinimg.com/originals/9b/d8/90/9bd89050c9b149dfda7bc46e9782fd04.gif") center center;
+    height: 233px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    --y-position: 35%; /* default is centered. modify this if you want to move your banner image up or down. */
+    background-position: center var(--y-position);
+    border-bottom: 3px solid #073c87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-family: "Tangerine", cursive;
+    color: #ffffff;
+    text-align: center;
+    line-height: 233px;
+    font-size: 65px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.curved-rectangle {
+  width: fit-content;        
+  height: 80px;         
+  padding: 10px 20px;  /* Adjust padding as needed */
+  background-color: #ffb1e4;
+  border-radius: 40px;  /* Set to exactly half the height for fully round ends */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main-content, .side-content {
+    border: 3px inset #b8cbe6;
+    padding: 20px;
+    background-color: #fae8fb;
+    box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
+    -webkit-box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
+    -moz-box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
+}
+
+.main-content {
+    width: 640px;
+    padding: 11px;
+}
+
+.main-content h3, h2 {
+    color: #4a003c;
+    font-size: 1.3em;
+    margin-top: 11px;
+}
+
+.main-content p {
+    font-size: 1.1em;
+    color: #c9007d;
+    line-height: 1.3em;
+}
+
+.main-content a {
+    text-decoration: underline;
+    color: #3329d5;
+}
+
+.main-content li {
+    list-style-image: url("https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/shining%20blue/05b707f40897673e8f8e208a9ea90046247a87a8.gifv");
+    margin-right: 20px;
+    font-size: 1.1em;
+    color: #9800a6;
+}
+
+.side-content {
+    width: 290px;
+    padding: 9px;
+}
+
+.navigation {
+    margin-top: 10px;
+    padding: 3px;
+}
+
+.navigation a {
+    display: block;
+    color: #0016bf;
+    text-decoration: none;
+    font-size: 1.6em;
+    margin: 12px 0;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.update-log {
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 321px;
+    background-color: #d6e4f6;
+    height: 100px;
+    border: 3px inset #b8cbe6;
+    overflow-y: auto;
+    box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
+    -webkit-box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
+    -moz-box-shadow: 2px 1px 45px -12px rgba(0,48,217,0.16) inset;
+}
+
+.update-log h3 {
+    color: #001f4a;
+    font-size: 1.3em;
+    margin-top: 11px;
+}
+
+.update-log li {
+    color: #0058d4;
+    margin-right: 39px;
+    line-height: 21px;
+    list-style-image: url("https://file.garden/Z3nf4eZzZUtRPfhK/free%20layout%20assets/shining%20blue/f84f7f1b7f2c9b99c44860cad40952cd5ddaa339.gifv");
+}
+
+.update-log::-webkit-scrollbar {
+    width: 6px;
+}
+
+.update-log::-webkit-scrollbar-thumb {
+    background-color: #5b8cc1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5b8cc1;
+    border-radius: 3px;
+}
+
+.footer {
+    background-color: #bfdaff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: #25518f;
+}
+
+/* decorative images: positioned relative to the container. you can change the images here or add more. just make sure your pictures have transparent backgrounds! */
+.decorative-image {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    pointer-events: none; /* FIX: lets clicks pass through to whatever's underneath (like your nav links) instead of being caught by these decorative boxes */
+}
+
+.top-left {
+    top: 90px;
+    left: -70px;
+    width: 244px;
+    background-image: url('../photos/heart_button.png');
+    height: 166px;
+    transform: rotate(346deg);
+}
+
+.bottom-right {
+    bottom: -30px;
+    right: -189px;
+    background-image: url('https://64.media.tumblr.com/b69cad3dfd0a76c0e57bc6bf97812e24/565e6b98159a2376-04/s250x400/817915090c662cfe5b3a22c82ed17067f747533f.pnj');
+    width: 320px;
+    height: 340px;
+    transform: rotate(11deg);
+}
+
+.top-right {
+    top: 166px;
+    right: -87px;
+    background-image: url('https://www.freepnglogos.com/uploads/bug-png/ladybug-png-transparent-image-pngpix-7.png');
+    width: 220px;
+    height: 140px;
+    transform: rotate(11deg);
+}
+
+.top-left-corner{
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    top: 20px;
+    left: 15px;
+}
+
+:root {
+        --titlebar-gradient: linear-gradient(90deg, #9800a6, #c9007d, #f7ff57);
+        --dialog-blue: #6a1535;
+        --dialog-accent: white; /* color of text on diaglog blue */
+        --titlebar-color: white; /* reccomended to change so its easy to read on titlebar color */
+        --player-image: url(../photos/harmony_splatoon.jpg);
+
+    /*** 98 css styling ***/
+    /* while some of these may specify a single element, theyre used across mulitple */
+        --surface: #c0c0c0;
+        --button-highlight: #ffffff;
+        --button-face: #dfdfdf;
+        --button-shadow: #808080;
+        --light-button-shadow: #a9a9a9;
+        --window-frame: #0a0a0a;
+        --border-field: inset -1px -1px var(--button-highlight),
+            inset 1px 1px var(--button-shadow), inset -2px -2px var(--button-face),
+            inset 2px 2px var(--window-frame);
+    }
+
+    @font-face {
+  font-family: "Pixelated MS Sans Serif";
+  src: url("https://files.catbox.moe/qgjjre.woff") format("woff");
+  src: url("https://files.catbox.moe/8fwbkl.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url("https://files.catbox.moe/z7csle.woff") format("woff");
+    src: url("https://files.catbox.moe/moqhx6.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    }
+
+    #musicplayer {
+  font-family: "Pixelated MS Sans Serif", Arial;
+  -webkit-font-smoothing: none;
+  font-size: 11px;
+  color:var(--window-frame);
+  width: fit-content;
+  border:var(--window-frame) solid 1px;
+  margin:0 auto;
+    box-shadow: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-face), inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-highlight);
+  background: var(--surface);
+  padding: 3px;
+  width: 260px;
+    }
+
+    .title-color {  
+  padding: 3px 2px 3px 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    background: var(--titlebar-gradient);
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.actual-title {
+    color:var(--titlebar-color);
+  display: flex;
+  gap: 5px;
+}
+
+.seeking {
+    font-weight: normal;
+    font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    gap: 5px;
+    margin: 12px 0;
+}
+
+.player-flex {
+    display: flex;
+    gap: 3px;
+}
+
+.player-main {
+    width: calc(100% - 100px);
+    margin-top: 1px;
+}
+
+.player-icon-holder {
+  border: 2px solid var(--surface);
+  width:95px;
+  height:95px;
+  padding: 1px;
+  background-image:linear-gradient(-45deg, var(--button-face) 50%, var(--window-frame) 50%);
+  background-size:cover;
+  background-repeat:no-repeat;
+  border-width:1px;
+  border-style:solid;
+  border-color: var(--button-shadow) var(--button-highlight) var(--button-highlight) var(--button-shadow);
+  
+  overflow: hidden;
+  position:relative;
+  z-index: 2;
+}
+
+.player-icon {
+    background-image:var(--player-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+  width:95px;
+  height:95px;
+  display: display;
+}
+
+/* BELOW IS LARGELY RIPPED FROM 98 CSS */
+.track-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  border-radius:0;
+  box-sizing: border-box;
+  outline:0;
+  
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  position: relative;
+  padding: 3px 4px;
+  padding-right: 32px;
+  background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/button-down.svg");
+  background-position: top 2px right 2px;
+  background-repeat: no-repeat;
+  width:100%;
+
+  box-shadow: var(--border-field);
+  background-color: var(--button-highlight);
+  height: 21px;
+
+  font-family: "Pixelated MS Sans Serif", Arial;
+  -webkit-font-smoothing: none;
+  font-size: 11px;
+  font-weight: lighter;
+}
+
+.track-select:focus {
+  color: var(--dialog-accent);
+  background-color: var(--dialog-blue);
+
+}
+.track-select:focus option {
+  color: var(--window-frame);
+  background-color: var(--button-highlight);  
+  outline: 1px;
+  border: none;
+}
+
+.track-select:active {
+  background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/button-down-active.svg");
+}
+
+/* input */
+#musicplayer input[type="range"] {  
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+#musicplayer input[type="range"]:focus {
+  outline: none;
+}
+
+#musicplayer input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 21px;
+  width: 11px;
+  background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-horizontal.svg");
+  transform: translateY(-8px);
+  box-shadow: none;
+  border: none;
+}
+
+#musicplayer input[type="range"].has-box-indicator::-webkit-slider-thumb {
+  background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-rectangle-horizontal.svg");
+  transform: translateY(-10px);
+}
+
+#musicplayer input[type="range"]::-moz-range-thumb {
+  height: 21px;
+  width: 11px;
+  border: 0;
+  border-radius: 0;
+  background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-horizontal.svg");
+  transform: translateY(2px);
+}
+
+#musicplayer input[type="range"].has-box-indicator::-moz-range-thumb {
+  background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-rectangle-horizontal.svg");
+  transform: translateY(0px);
+}
+
+#musicplayer input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  box-sizing: border-box;
+  background: var(--window-frame);
+  border-right: 1px solid var(--button-shadow);
+  border-bottom: 1px solid var(--button-shadow);
+  box-shadow: 1px 0 0 var(--button-highlight), 1px 1px 0 var(--button-highlight), 0 1px 0 var(--button-highlight), -1px 0 0 var(--light-button-shadow),
+    -1px -1px 0 var(--light-button-shadow), 0 -1px 0 var(--light-button-shadow), -1px 1px 0 var(--button-highlight), 1px -1px var(--light-button-shadow);
+}
+
+#musicplayer input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    box-sizing: border-box;
+    background: var(--window-frame);
+    border-right: 1px solid var(--button-shadow);
+    border-bottom: 1px solid var(--button-shadow);
+    box-shadow: 1px 0 0 var(--button-highlight), 1px 1px 0 var(--button-highlight), 0 1px 0 var(--button-highlight), -1px 0 0 var(--light-button-shadow),
+    -1px -1px 0 var(--light-button-shadow), 0 -1px 0 var(--light-button-shadow), -1px 1px 0 var(--button-highlight), 1px -1px var(--light-button-shadow);
+}
+
+.window-button {
+    background: var(--surface);
+    border: none;
+    border-radius: 0;
+    box-shadow: inset -1px -1px var(--window-frame),inset 1px 1px var(--button-highlight),inset -2px -2px var(--button-shadow),inset 2px 2px var(--button-face);
+    box-sizing: border-box;
+    color: inherit;
+    text-shadow: 0 0 var(--window-frame);
+}
+
+.window-button:active {
+  box-shadow: inset -1px -1px var(--button-highlight), inset 1px 1px var(--window-frame), inset -2px -2px var(--button-face), inset 2px 2px var(--button-shadow);
+  text-shadow: 1px 1px var(--window-frame);
+}
+
+.window-button:focus  {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+.player-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 5px 5px 0 5px;
+}
+.player-buttons .window-button  {
+    width: 33%;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+.player-buttons .window-button svg {
+   width: 15px;
+   height: 15px;
+}
+
+.title-bar-controls {
+    display: flex;
+}
+.close {
+    margin-left: 2px;
+    background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/close.svg");
+    background-repeat: no-repeat;
+    background-position: top 3px left 4px;
+
+    padding: 0;
+    display: block;
+    min-width: 16px;
+    min-height: 14px;
+}
+
+.minimize {
+  background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/minimize.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 3px left 4px;
+    padding: 0;
+    display: block;
+    min-width: 16px;
+    min-height: 14px;
+}
+
+.maximize {
+  background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/maximize.svg");
+  background-repeat: no-repeat;
+  background-position: top 2px left 3px;
+    padding: 0;
+    display: block;
+    min-width: 16px;
+    min-height: 14px;
+}
