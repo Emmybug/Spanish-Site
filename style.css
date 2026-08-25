@@ -242,7 +242,7 @@ body {
         --dialog-blue: #6a1535;
         --dialog-accent: white; /* color of text on diaglog blue */
         --titlebar-color: white; /* reccomended to change so its easy to read on titlebar color */
-        --player-image: url(../photos/harmony_splatoon.jpg);
+        --player-image: url(photos/harmony_splatoon.jpg);
 
     /*** 98 css styling ***/
     /* while some of these may specify a single element, theyre used across mulitple */
